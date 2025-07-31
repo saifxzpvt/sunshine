@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About Us - SUNSHINE TECHNOLOGY</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="left">
+        <span>SUNSHINE TECHNOLOGY</span>
+      </div>
+
+      <div class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <script>
+          function toggleMenu() {
+            const navMenu = document.getElementById("navMenu");
+            navMenu.classList.toggle("active");
+          }
+        </script>
+        <div class="right">
+          <ul id="navMenu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <main>
+    <section class="secondsection">
+      <h1 class="name" data-text="About Us">About Us</h1>
+      
+      <div class="experience">
+        <h2>Who We Are</h2>
+        <p>
+          Sunshine Technology is a leading tool engineering company based in Faridabad, Haryana. With years of experience, we specialize in the design, development, and manufacturing of high-precision tools, welding fixtures, receiving gauges, SPMs, and panel checkers.
+        </p>
+      </div>
+
+      <div class="experience">
+        <h2>Our Vision</h2>
+        <p>
+          To be the most trusted partner in tooling and precision engineering by delivering excellence, innovation, and customer satisfaction with every solution we provide.
+        </p>
+      </div>
+
+      <div class="experience">
+        <h2>What Sets Us Apart</h2>
+        <ul style="padding-left: 20px; color: #fff;">
+          <li>✔ 100% customized tooling solutions</li>
+          <li>✔ In-house VMC & CNC machining facilities</li>
+          <li>✔ Rapid prototyping & delivery cycles</li>
+          <li>✔ Trusted by top automotive and industrial clients</li>
+          <li>✔ Experienced engineers & skilled workforce</li>
+        </ul>
+      </div>
+
+      <div class="experience">
+        <h2>Industries We Serve</h2>
+        <p>
+          We proudly serve a diverse range of industries including:
+        </p>
+        <ul style="padding-left: 20px; color: #fff;">
+          <li>• Automotive & Auto Parts</li>
+          <li>• Sheet Metal Fabrication</li>
+          <li>• Industrial Equipment Manufacturers</li>
+          <li>• OEMs & Ancillary Units</li>
+        </ul>
+      </div>
+
+      <div class="experience">
+        <h2>Our Location</h2>
+        <p>
+          📍 MCF No.3894, Kurukshetra School Wali Gali,<br />
+          60 Feet Road, Jawahar Colony,<br />
+          Faridabad, Haryana - 121004
+        </p>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer">
+      <div class="footer-first">
+        <h2>SUNSHINE TECHNOLOGY //</h2>
+      </div>
+    </div>
+
+    <div class="text-center">
+      © 2025 SUNSHINE TECHNOLOGY || design.sstechnology18@gmail.com
+    </div>
+  </footer>
+
+  <!-- JS for navbar shrink -->
+  <script>
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector("header");
+      if (window.scrollY > 50) {
+        header.classList.add("shrink");
+      } else {
+        header.classList.remove("shrink");
+      }
+    });
+  </script>
+
+</body>
+</html>

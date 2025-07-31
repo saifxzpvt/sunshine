@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Us - SUNSHINE TECHNOLOGY</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="left">
+        <span>SUNSHINE TECHNOLOGY</span>
+      </div>
+
+      <div class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <script>
+          function toggleMenu() {
+            const navMenu = document.getElementById("navMenu");
+            navMenu.classList.toggle("active");
+          }
+        </script>
+        <div class="right">
+          <ul id="navMenu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <main>
+    <section class="contact-section" style="padding: 60px 20px;">
+      <h1 class="name" data-text="Contact Us">Contact Us</h1>
+      <p style="color: #fbfbfb; margin-bottom: 30px;">
+        Reach out to us for any inquiries, quotations, or collaborations. We'll respond within 24 hours.
+      </p>
+
+      <form action="https://formspree.io/f/meoaqpgv" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">SEND</button>
+      </form>
+
+      <div style="margin-top: 40px; color: #b8b8b8;">
+        <p><strong>Email:</strong> design.sstechnology18@gmail.com</p>
+        <p><strong>Phone:</strong> <a href="tel:+919891591800" style="color: #ff6600;">+91 9891591800</a></p>
+        <p><strong>Address:</strong> MCF No.3894, Kurukshetra School Wali Gali, 60 Feet Road, Jawahar Colony, Faridabad, Haryana, 121004</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+
+    <div class="text-center">
+      © 2025 SUNSHINE TECHNOLOGY || design.sstechnology18@gmail.com
+    </div>
+  </footer>
+
+  <!-- JS for navbar shrink -->
+  <script>
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector("header");
+      if (window.scrollY > 50) {
+        header.classList.add("shrink");
+      } else {
+        header.classList.remove("shrink");
+      }
+    });
+  </script>
+
+</body>
+</html>

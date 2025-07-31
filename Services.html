@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Our Services - SUNSHINE TECHNOLOGY</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navbar (same as Home) -->
+  <header>
+    <nav>
+      <div class="left">
+        <span>SUNSHINE TECHNOLOGY</span>
+      </div>
+
+      <div class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <script>
+          function toggleMenu() {
+            const navMenu = document.getElementById("navMenu");
+            navMenu.classList.toggle("active");
+          }
+        </script>
+        <div class="right">
+          <ul id="navMenu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Services Section -->
+  <main>
+    <section class="secondsection">
+      <span class="text-grey">What We Do</span>
+      <h1>Our Services</h1>
+
+      <div class="experience">
+        <h2>⚙️ Press Tools</h2>
+        <p>Precision-designed tools for sheet metal operations, ensuring consistent performance and long-lasting durability.</p>
+      </div>
+
+      <div class="experience">
+        <h2>🔩 Welding Fixtures</h2>
+        <p>Custom welding fixtures to align and clamp components precisely, ensuring strength and accuracy during welds.</p>
+      </div>
+
+      <div class="experience">
+        <h2>📏 Receiving Gauges</h2>
+        <p>High-quality inspection gauges that validate dimensional accuracy and ensure zero-defect manufacturing standards.</p>
+      </div>
+
+      <div class="experience">
+        <h2>📐 Panel Checkers</h2>
+        <p>Panel checking fixtures to verify accuracy and shape consistency for sheet metal and structural parts.</p>
+      </div>
+
+      <div class="experience">
+        <h2>🛠️ Special Purpose Machines (SPMs)</h2>
+        <p>Tailor-made SPMs that automate complex production steps and improve operational efficiency.</p>
+      </div>
+
+      <div class="experience">
+        <h2>🖥️ VMC & CNC Job Work</h2>
+        <p>Precision machining on Vertical Machining Centers and CNCs for dies, fixtures, and engineering components.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (same style as Home) -->
+  <footer>
+    <div class="footer">
+      <div class="footer-first">
+        <h2>SUNSHINE TECHNOLOGY //</h2>
+      </div>
+    </div>
+
+    <div class="text-center">
+      © 2025 SUNSHINE TECHNOLOGY || design.sstechnology18@gmail.com
+    </div>
+  </footer>
+
+  <!-- JS for navbar shrink -->
+  <script>
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector("header");
+      if (window.scrollY > 50) {
+        header.classList.add("shrink");
+      } else {
+        header.classList.remove("shrink");
+      }
+    });
+  </script>
+</body>
+</html>
